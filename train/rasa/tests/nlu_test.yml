@@ -1,0 +1,139 @@
+version: "3.1"
+nlu: 
+- intent:  TNN
+  examples:  |
+    - Ngành Công nghệ rau hoa quả và cảnh quan có chương trình học bổng nào dành cho sinh viên chính quy không?
+    - Ngành Khoa học cây trồng trường nông nghiệp có những chương trình thực tập nào cho sinh viên sau khi ra trường không?
+    - ngành Nông học ở trường nông nghiệp có những môn học tự chọn hay môn học tiên quyết nào?
+    - Ngành Sinh học ứng dụng có cơ sở vật chất và phòng thí nghiệm như thế nào, hiện đại hay cũ rồi?
+    - Ngành Thú y trường nông nghiệp có những chương trình liên kết quốc tế hay học ở nước ngoài nào không, ví dụ như ở Hàn?
+    - Ngành Dược Thú y có các hoạt động ngoại khóa nào hỗ trợ tân sinh viên không?
+    - Ngành Khoa học đất có những môn học nào liên quan đến bảo vệ môi trường hay giúp ích môi trường nào không?
+    - Ngành Khoa học cây trồng có các chương trình nghiên cứu và phát triển gì cho sinh viên chính quy?
+    - Ngành Bảo vệ thực vật trường nông nghiệp có cơ hội thực tập ở đâu?
+    - Ngành Chăn nuôi trường nông nghiệp đào tạo sinh viên về những kỹ năng và kiến thức gì?
+    - Những công việc cụ thể mà sinh viên ngành Công nghệ giống cây trồng trường nông nghiệp có thể làm là gì?
+    - Ngành Công nghệ rau hoa quả và cảnh quan trường nông nghiệp có chương trình học bổng nào không?
+    - Học ngành Quản lý đất và công nghệ phân bón có cần phải biết tiếng Anh?
+    - Học ngành Thú y trường nông nghiệp có cần phải biết tiếng Anh?
+    - Ngành Chăn nuôi trường nông nghiệp tại CTU có chương trình thực tập nào không?
+    - Ngành Công nghệ rau hoa quả và cảnh quan trường nông nghiệp tại CTU có yêu cầu kỹ năng gì đặc biệt khi xét tuyển?
+    - Cơ hội việc làm cho sinh viên tốt nghiệp ngành Công nghệ rau hoa quả và cảnh quan tại CTU như thế nào?
+    - Sinh viên ngành Khoa học cây trồng tại CTU có cơ hội tham gia các dự án nghiên cứu không?
+    - Yêu cầu tiếng Anh đầu ra của ngành Công nghệ rau hoa quả và cảnh quan trường nông nghiệp tại CTU là gì?
+    - Tiêu chí và cách thức xếp loại học lực của sinh viên ngành Bảo vệ thực vật tại CTU là gì?
+- intent:  TKT
+  examples:  |
+    - Ngành Quản trị kinh doanh đào tạo những kỹ năng mềm gì?
+    - Ngành Kinh tế học đào tạo về những gì tại Đại học Cần Thơ để cho sinh viên tự tin khi ra trường?
+    - Ngành Tài chính Ngân hàng có những môn học tiên quyết gì tại Đại học Cần Thơ?
+    - Ngành Kế toán tại Đại học Cần Thơ đào tạo về những gì cho sinh viên?
+    - Những kỹ năng nào cần thiết khi học ngành Quản trị kinh doanh tại Đại học Cần Thơ?
+    - Ngành Kinh tế học chú trọng vào những lĩnh vực nào là chủ yếu?
+    - Ngành Tài chính Ngân hàng tại Đại học Cần Thơ đào tạo về gì?
+    - Ngành Kế toán tại Đại học Cần Thơ đào tạo những kỹ năng gì?
+    - Sinh viên ngành Quản trị kinh doanh tại Đại học Cần Thơ học những môn gì?
+    - Ngành Kinh tế học tại Đại học Cần Thơ đào tạo về những gì?
+    - Ngành Tài chính Ngân hàng tại Đại học Cần Thơ có những môn học gì?
+    - Chương trình Quản trị kinh doanh tại Đại học Cần Thơ có những điểm đặc biệt gì?
+    - Những môn học chính trong ngành Kinh tế học là gì?
+    - Sinh viên Ngành Tài chính Ngân hàng sẽ được học về những gì?
+    - Chương trình học ngành Kế toán tại Đại học Cần Thơ bao gồm những gì?
+    - Những kỹ năng nào cần thiết khi học ngành Quản trị kinh doanh tại Đại học Cần Thơ?
+    - Ngành Kinh tế học tại Đại học Cần Thơ chú trọng vào những gì?
+    - Ngành Tài chính Ngân hàng đào tạo về những gì?
+    - Những kỹ năng nào cần thiết khi học ngành Quản trị kinh doanh tại Đại học Cần Thơ?
+    - Ngành Kinh tế học tại Đại học Cần Thơ tập trung vào kĩ năng gì?
+
+- intent: TCNTTTT
+  examples:  |
+    - Trường công nghệ thông tin và truyền thông đại học cần thơ có các chương trình đào tạo về thiết kế hệ thống doanh nghiệp không?
+    - Sinh viên trường công nghệ thông tin và truyền thông có thể tham gia các khóa học về kỹ năng tự học không?
+    - Trường Công nghệ thông tin và truyền thông có các môn học về trí tuệ nhân tạo không?
+    - Điều kiện tuyển sinh của trường công nghệ thông tin và truyền thông là gì, ?
+    - Trường CNTT&TT (Công nghệ thông tin và truyền thông) đại học cần thơ có chương trình đào tạo liên thông không?
+    - Sinh viên trường công nghệ thông tin và truyền thông có thể tham gia các khóa học về kỹ năng quản lý thời gian ở khu 3 không?
+    - Trường công nghệ thông tin và truyền thông đại học cần thơ có các chương trình đào tạo về phân tích dữ liệu, trí tuệ nhân tạo không?
+    - Trường CNTT&TT (Công nghệ thông tin và truyền thông) đại học cần thơ có các chương trình đào tạo về quản lý dự án CNTT không?
+    - Sinh viên trường công nghệ thông tin và truyền thông có thể tham gia các hoạt động xã hội không?
+    - Trường CNTT&TT (Công nghệ thông tin và truyền thông) đại học cần thơ có chương trình đào tạo về hệ thống thông tin không?
+    - Sinh viên trường công nghệ thông tin và truyền thông có thể học thêm các ngoại ngữ khác trong trường không?
+    - Sinh viên trường công nghệ thông tin và truyền thông có thể tham gia các câu lạc bộ học thuật tại trường không?
+    - Trường công nghệ thông tin và truyền thông đại học cần thơ có các chương trình đào tạo về thiết kế phần mềm không?
+    - Trường Công nghệ thông tin và truyền thông có hỗ trợ Sinh viên trường công nghệ thông tin và truyền thông quốc tế hay khu vực không?
+    - Trường Công nghệ thông tin và truyền thông có tổ chức chương trình định hướng cho tân Sinh viên trường công nghệ thông tin và truyền thông không?
+    - Trường CNTT&TT (Công nghệ thông tin và truyền thông) có bao nhiêu ngành đào tạo chính quy?
+    - Trường CNTT&TT (Công nghệ thông tin và truyền thông) đại học cần thơ có các chương trình đào tạo về thực tế ảo không?
+    - Sinh viên trường công nghệ thông tin và truyền thông cần chuẩn bị những giấy tờ gì khi nhập học?
+    - Hình thức xét tuyển thi thptqg của trường công nghệ thông tin và truyền thông đại học cần thơ là gì?
+    - Điều kiện xét học bổng khuyến khích của sinh viên học trường công nghệ thông tin và truyền thông là gì?
+- intent: KMTTNTN
+  examples: |
+    - Khoa Môi trường & Tài nguyên Thiên nhiên có các khóa học nào về quản lý rủi ro môi trường hay bảo vệ môi trường không?
+    - Sinh viên đậu vào khoa môi trường & tài nguyên thiên nhiên có thể tham gia các dự án nghiên cứu về quản lý rừng không?
+    - Điều kiện để nhận học bổng của Khoa Môi trường & Tài nguyên Thiên nhiên là gì?
+    - Khoa Môi trường & Tài nguyên Thiên nhiên có chương trình học nào về kinh tế tuần hoàn không?
+    - Khoa Môi trường & Tài nguyên Thiên nhiên có hỗ trợ sinh viên tìm kiếm việc làm sau khi tốt nghiệp không?
+    - Học tại khoa môi trường có thể tham gia các khóa học về biến đổi khí hậu không?
+    - Ngành Kỹ thuật cấp thoát nước ở khoa Môi trường và Tài nguyên Thiên nhiên (mttntn) là gì?
+    - Ngành Kỹ thuật môi trường ở khoa Môi trường và Tài nguyên Thiên nhiên (mttntn) là gì?
+    - Ngành Quản lý tài nguyên và môi trờng ở khoa Môi trường và Tài nguyên Thiên nhiên (mttntn) là gì?
+    - Ngành Quản lý đất đai ở khoa Môi trường và Tài nguyên Thiên nhiên (mttntn) có điểm chuẩn là bao nhiêu?
+    - Ngành Quy hoạch vùng và đô thị ở khoa Môi trường và Tài nguyên Thiên nhiên (mttntn) lấy tối thiểu bao nhiêu điểm năm 2024?
+    - Sinh viên Khoa Môi Trường có thể học thêm các chứng chỉ nghề nào tại trường không?
+    - Khoa Môi trường & Tài nguyên Thiên nhiên có tổ chức các chuyến đi thực địa, chuyến đi thực tế không?
+    - Sinh viên Khoa Môi trường & Tài nguyên Thiên nhiên có thể tham gia các dự án nghiên cứu về nông nghiệp bền vững không?
+    - Sinh viên Khoa Môi Trường có thể tham gia các hoạt động văn nghệ không?
+    - Khoa Môi trường & Tài nguyên Thiên nhiên có chương trình đào tạo nào về quản lý hệ sinh thái không?
+    - Khoa Môi trường & Tài nguyên Thiên nhiên có các khóa học nâng cao nào?
+    - Sinh viên Khoa Môi trường & Tài nguyên Thiên nhiên có thể tham gia các dự án nghiên cứu về bảo vệ đất nông nghiệp không?
+    - Học tại khoa môi trường có thể tham gia các khóa học về quản lý tài nguyên không?
+    - Khoa Môi trường & Tài nguyên Thiên nhiên có các khóa học nào về năng lượng tái tạo không?
+    - Khoa Môi Trường & Tài nguyên Thiên nhiên lấy điểm chuẩn thấp nhất là bao nhiêu
+    
+- intent: TBK
+  examples: |
+    - Trường Bách Khoa ở Đại Học Cần Thơ dạy những gì?
+    - Học phí của Trường Bách Khoa ở Đại Học Cần Thơ là bao nhiêu? 
+    - Có các ngành nào tại Trường Bách Khoa ở Đại Học Cần Thơ? 
+    - Trường Bách Khoa ở Đại Học Cần Thơ có các ngành trên 26đ? 
+    - Có các chương trình học bổng nào cho sinh viên xuất sắc tại Trường Bách Khoa ở Đại Học Cần Thơ không? 
+    - Cần chuẩn bị những giấy tờ gì cho ngành Logistics và Quản lý chuỗi cung ứng ở trường Bách Khoa khi nhập học? 
+    - Cần chuẩn bị gì cho ngành Quản lý công nghiệp ở trường Bách Khoa sau khi tốt nghiệp? 
+    - Đội ngũ giảng viên của ngành Công nghệ kỹ thuật hóa học như thế nào ở trường Bách Khoa? 
+    - giảng viên ngành Công nghệ kỹ thuật hóa học (chương trình chất lượng cao) như thế nào ở trường Bách Khoa? 
+    - Đội ngũ giảng viên của ngành Kiến trúc như thế nào ở trường Bách Khoa? 
+    - Đội ngũ giảng viên của ngành Kỹ thuật cơ khí - Cơ khí chế tạo máy như thế nào ở trường Bách Khoa? 
+    - Học ngành Công nghệ kỹ thuật hóa học (chương trình chất lượng cao) ở trường Bách Khoa có được đảm bảo việc làm? 
+    - Học ngành Kiến trúc ở trường Bách Khoa có được đảm bảo việc làm? 
+    - Học ngành Kỹ thuật cơ khí - Cơ khí chế tạo máy ở trường Bách Khoa có được đảm bảo việc làm? 
+    - ngành Kỹ thuật cơ khí có được đảm bảo việc làm?
+    - Học ngành Kỹ thuật cơ điện tử ở trường Bách Khoa có được đảm bảo việc làm?
+    - Học ngành Kỹ thuật cơ khí - Cơ khí ô tô ở trường Bách Khoa cần biết trước nhũng gì? 
+    - ngành Kỹ thuật cơ điện tử điểm chuẩn là bao nhiêu?
+    - Học ngành Kỹ thuật máy tính ở trường Bách Khoa cần biết trước code hông? 
+    - Nếu trúng tuyển vào ngành Kỹ thuật cơ điện tử ở trường Bách Khoa, có thể học văn bằng hai là ngành khác tại trường chứ? 
+
+- intent: DHCT
+  examples: |
+    - Đại học Cần Thơ có những khoa và ngành học nào nổi tiếng? Hãy kể tên một số khoa nổi tiếng tiêu biểu đó.
+    - Trình bày những thành tựu, giải thưởng nổi bật của Đại học Cần Thơ trong các lĩnh vực nghiên cứu khoa học và đào tạo ngoài nước.
+    - Hãy kể về các hoạt động hợp tác với Nhật, Hàn của Đại học Cần Thơ.
+    - Đại học Cần Thơ có những giải thưởng trong nước và danh hiệu ngoài nước nào?
+    - Nêu những đổi mới trong chương trình giảng dạy, chương trình dự thảo của Đại học Cần Thơ trong những năm 2024.
+    - ctu đã đào tạo bao nhiêu sinh viên tốt nghiệp mỗi năm?
+    - Trình bày về sự phát triển cơ sở vật chất của Đại học Cần Thơ qua các giai đoạn, ví dụ như tòa nhà atl.
+    - Đại học Cần Thơ có những chương trình đào tạo sau đại học nào cho sinh viên sau khi tốt nghiệp?
+    - Đại học Cần Thơ có những chương trình học bổng nào cho sinh viên xuất sắc, sinh viên nghèo, sinh viên khuyến tật?
+    - Đại học Cần Thơ đã tổ chức các hội nghị, hội thảo khoa học quốc tế nào tại trường?
+    - Nêu các lĩnh vực nghiên cứu chủ chốt tại Đại học Cần Thơ, cũng như tại các khu khác.
+    - Đại học Cần Thơ có những đối tác doanh nghiệp, công ty nào trong việc đào tạo và tuyển dụng sinh viên tại trường?
+    - Hãy trình bày về các chương trình liên kết đào tạo với các trường đại học bên Hàn.
+    - Nêu các giải pháp của Đại học Cần Thơ để nâng cao chất lượng giáo dục, chất lượng đầu vào, đầu ra.
+    - Đại học Cần Thơ có những trung tâm nghiên cứu và phát triển nào cho sinh viên chính quy?
+    - Trình bày về quy trình xét tuyển học bạ tại Đại học Cần Thơ.
+    - Đại học Cần Thơ có những chương trình đào tạo liên kết với nước ngoài không? Điều kiện tuyển sinh như thế nào?
+    - Hãy kể về quy trình xét tuyển học sinh giỏi vào Đại học Cần Thơ qua phương thức 1.
+    - Đại học Cần Thơ có những chương trình học bổng nào cho thí sinh đạt điểm cao trong kỳ thi thptqg?
+    - Trình bày về chính sách ưu tiên tuyển sinh dành cho học sinh ở vùng sâu, vùng xa, trên núi, ngoài đảo.
+

@@ -1,0 +1,46 @@
+version: "3.1"
+
+intents:
+  - TCNTTTT
+  - TNN
+  - TKT
+  - KMTTNTN
+  - TBK
+  - DHCT
+
+responses:
+  utter_TCNTTTT:
+  - text: ''
+  utter_TKT:
+  - text: ''
+  utter_TNN:
+  - text: ''
+  utter_TBK:
+  - text: ''
+  utter_KMTTNTN:
+  - text: ''
+  utter_DHCT:
+  - text: ''
+  utter_default:
+  - text: "Xin lỗi, tôi không hiểu. Bạn có thể nói lại không?"
+
+actions:
+  - utter_TCNTTTT
+  - utter_TKT
+  - utter_TNN
+  - utter_KMTTNTN
+  - utter_TBK
+  - utter_DHCT
+  - action_default_fallback
+  - action_TCNTTTT
+  - action_TKT
+  - action_TNN
+  - action_KMTTNTN
+  - action_TBK
+  - action_DHCT
+
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

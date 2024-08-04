@@ -1,0 +1,42 @@
+[
+  {
+    "text": "Ngành Chăn nuôi trường nông nghiệp đào tạo sinh viên về những kỹ năng và kiến thức gì?",
+    "intent": "TNN",
+    "intent_prediction": {
+      "name": "TKT",
+      "confidence": 0.6897767782211304
+    }
+  },
+  {
+    "text": "Đại học Cần Thơ đã tổ chức các hội nghị, hội thảo khoa học quốc tế nào tại trường?",
+    "intent": "DHCT",
+    "intent_prediction": {
+      "name": "TBK",
+      "confidence": 0.8843663930892944
+    }
+  },
+  {
+    "text": "Ngành Khoa học đất có những môn học nào liên quan đến bảo vệ môi trường hay giúp ích môi trường nào không?",
+    "intent": "TNN",
+    "intent_prediction": {
+      "name": "KMTTNTN",
+      "confidence": 0.9818697571754456
+    }
+  },
+  {
+    "text": "Đại học Cần Thơ có những khoa và ngành học nào nổi tiếng? Hãy kể tên một số khoa nổi tiếng tiêu biểu đó.",
+    "intent": "DHCT",
+    "intent_prediction": {
+      "name": "TNN",
+      "confidence": 0.8929362893104553
+    }
+  },
+  {
+    "text": "Ngành Dược Thú y có các hoạt động ngoại khóa nào hỗ trợ tân sinh viên không?",
+    "intent": "TNN",
+    "intent_prediction": {
+      "name": "TCNTTTT",
+      "confidence": 0.4987260401248932
+    }
+  }
+]

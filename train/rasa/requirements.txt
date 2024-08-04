@@ -1,0 +1,10 @@
+rasa==3.4.8
+rasa-sdk==3.4.1
+google-generativeai==0.5.3
+sanic==21.12.2
+websockets==10.4
+protobuf==3.19
+underthesea==6.0.3
+cython==3.0.10
+transformers==4.37
+tensorflow==2.8.4

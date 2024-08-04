@@ -1,0 +1,27 @@
+version: "3.1"
+
+stories:
+- steps:
+  - intent: TCNTTTT
+  - action: action_TCNTTTT
+  story: TCNTTTT
+- steps:
+  - intent: TNN
+  - action: action_TNN
+  story: TNN
+- steps:
+  - intent: TKT
+  - action: action_TKT
+  story: TKT
+- steps:
+  - intent: TBK
+  - action: action_TBK
+  story: TBK
+- steps:
+  - intent: KMTTNTN
+  - action: action_KMTTNTN
+  story: KMTTNTNT
+- steps:
+  - intent: DHCT
+  - action: action_DHCT
+  story: DHCT

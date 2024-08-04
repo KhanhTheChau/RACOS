@@ -1,9 +1,7 @@
 # RACOS: AI-Routed Chat-Voice Admission Consulting Support System
 
-### Thanh Ma, The-Khanh Chau, Phu-An Thai, Tri-Min Tram, Khuong Huynh, and Thanh-Nghi Do 
-### CICT, Can Tho University, Vietnam
-#### {mtthanh,hgkhuong,dtnghi}@ctu.edu.vn,
-#### {khanhb2207528,anb2207512,minb2207541}@student.ctu.edu.vn
+### Thanh Ma, The-Khanh Chau, Phu-An Thai, Tri-Min Tram, Khuong Huynh, and Thanh-Nghi Do (CICT, Can Tho University, Vietnam)
+#### {mtthanh,hgkhuong,dtnghi}@ctu.edu.vn, {khanhb2207528,anb2207512,minb2207541}@student.ctu.edu.vn
 
 
 ## Abstract. 
