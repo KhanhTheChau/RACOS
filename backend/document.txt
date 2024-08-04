@@ -1,0 +1,8 @@
+MONGODB_URI="mongodb+srv://anb2207512:s623tTGEZOE8I6K3@caas-test.re1dppl.mongodb.net/?retryWrites=true&w=majority&appName=caas-test"
+DB_NAME="ctu"
+GEMINI_KEY="AIzaSyD0UDUTwe0WHMNcYZjzxWCAWYnJO41t-Qc"
+DB_COLLECTION_TBK="TBK"
+
+DB_COLLECTION_TKT="TKT"
+
+DB_COLLECTION_CHUNG="CHUNG"

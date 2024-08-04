@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .text-highlights{
+    @apply bg-gradient-to-r from-teal-400 to-indigo-500 dark:from-teal-100 dark:to-indigo-200 bg-clip-text text-transparent;
+  }
+
+  .background-theme-red {
+    @apply bg-gradient-to-r from-rose-100 to-amber-50;
+  }
+
+  .background-theme-black {
+    @apply bg-gradient-to-r from-slate-800 to-black;
+  }
+
+  .text-extra-large {
+    @apply text-5xl;
+  
+  }
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+
+
+.gradient-bg {
+  background-image: linear-gradient(to top, black, transparent);
+}
+
+h1 {
+  @apply text-4xl font-bold p-2 text-black dark:text-white;
+}
+
+h2 {
+  @apply text-3xl font-bold p-2 text-black dark:text-white;
+}
+
+h4 {
+  @apply text-lg font-bold p-2 text-black dark:text-white;
+}
+
+p {
+  @apply p-2 text-black dark:text-white;
+}
+
+ul {
+  @apply pl-4 list-none;
+}
+
+ol {
+  @apply pl-4 list-decimal;
+}
+
+a {
+  
+}
+
+
+.fade-in{
+  animation: fadein 0.3s;
+}
+
+.fade-out{
+  animation: fadeout 0.3s;
+}
+
+
+.text-highlights{
+  @apply bg-gradient-to-r from-teal-500 to-indigo-600 bg-clip-text text-transparent;
+}
+
+
+@keyframes fadein {
+  0% {
+    transform: translateX(-25%);
+    @apply opacity-0;
+  }
+  100% {
+    transform: translateY(0);
+    @apply opacity-100;
+  }
+}
+
+@keyframes fadeout {
+  0% {
+    transform: translateX(0);
+    @apply opacity-100;
+  }
+  100% {
+    transform: translateX(-25%);
+    @apply opacity-0 delay-300;
+  }
+}
+
+html, body {
+  height: 100%;
+}
