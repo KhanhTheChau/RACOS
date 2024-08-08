@@ -1,8 +1,16 @@
 MONGODB_URI="mongodb+srv://anb2207512:s623tTGEZOE8I6K3@caas-test.re1dppl.mongodb.net/?retryWrites=true&w=majority&appName=caas-test"
+MONGODB_URI_2="mongodb+srv://admin:AoN0cU0N1eGdvFxO@caas.53i0rsu.mongodb.net/?retryWrites=true&w=majority&appName=caas"
 DB_NAME="ctu"
-GEMINI_KEY="-------------AI-----------zaSyD0UDUTwe0WHMNcYZjzxWCAWYnJO41t-Qc"
+DB_NAME_2="ctu_2"
+GEMINI_KEY="-------------AI//-----------zaSy//D0UDUTwe0WHMNcYZjzxWCAWYnJO41t-//Qc"
 DB_COLLECTION_TBK="TBK"
 
 DB_COLLECTION_TKT="TKT"
 
 DB_COLLECTION_CHUNG="CHUNG"
+
+DB_COLLECTION_KMTTNTN="KMTTNTN"
+
+DB_COLLECTION_TNN="TNN"
+
+DB_COLLECTION_TCNTTTT="TCNTTTT"

@@ -31,23 +31,30 @@ data_file_dhct = './chat/data/dhct.xlsx'
 data_file_kt = './chat/data/kt.xlsx'
 data_file_bk = './chat/data/bk.xlsx'
 data_file_cntt = './chat/data/cntt.xlsx'
+data_file_nn = ''
+data_file_mttntn = ''
 
 df_dhct = pd.read_excel(data_file_dhct)
 df_bk = pd.read_excel(data_file_bk)
 df_kt = pd.read_excel(data_file_kt)
 df_cntt = pd.read_excel(data_file_cntt)
+df_nn = pd.read_excel(data_file_nn)
+df_mttntn = pd.read_excel(data_file_mttntn)
 
 database_sentences_dhct = df_dhct['questions'].astype(str).tolist()
 database_sentences_bk = df_bk['questions'].astype(str).tolist()
 database_sentences_kt = df_kt['questions'].astype(str).tolist()
 database_sentences_cntt = df_cntt['questions'].astype(str).tolist()
-
+database_sentences_nn = df_nn['questions'].astype(str).tolist()
+database_sentences_mttntn = df_mttntn['questions'].astype(str).tolist()
 
 # Encode all database sentences
 db_vectors_dhct = encode_sentences(database_sentences_dhct)
 db_vectors_bk = encode_sentences(database_sentences_bk)
 db_vectors_kt = encode_sentences(database_sentences_kt)
 db_vectors_cntt = encode_sentences(database_sentences_cntt)
+db_vectors_nn = encode_sentences(database_sentences_nn)
+db_vectors_mttntn = encode_sentences(database_sentences_mttntn)
 
 # Example usage
 import time
@@ -91,6 +98,31 @@ def search_sentence_kt(query):
     start_time = time.time()
     closest_index = find_closest_sentence(query, db_vectors_kt)
     closest_sentence = database_sentences_kt[closest_index]
+    info = df_kt.iloc[closest_index]['answers']
+    
+    
+    print("Thời gian tìm câu gần nhất:", time.time() - start_time, "seconds")
+    print(f"The closest sentence to '{query}' is '{closest_sentence}'")
+    return info
+
+def search_sentence_nn(query):
+    
+    start_time = time.time()
+    closest_index = find_closest_sentence(query, db_vectors_kt)
+    closest_sentence = database_sentences_nn[closest_index]
+    info = df_kt.iloc[closest_index]['answers']
+    
+    
+    print("Thời gian tìm câu gần nhất:", time.time() - start_time, "seconds")
+    print(f"The closest sentence to '{query}' is '{closest_sentence}'")
+    return info
+
+
+def search_sentence_mttntn(query):
+    
+    start_time = time.time()
+    closest_index = find_closest_sentence(query, db_vectors_kt)
+    closest_sentence = database_sentences_mttntn[closest_index]
     info = df_kt.iloc[closest_index]['answers']
     
     

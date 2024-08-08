@@ -6,6 +6,8 @@ model_dhct = fasttext.load_model('./chat/models/fasttext_model_dhct.bin')
 model_tcntttt = fasttext.load_model('./chat/models/fasttext_model_tcntttt.bin')
 model_tkt = fasttext.load_model('./chat/models/fasttext_model_tkt.bin')
 model_tbk = fasttext.load_model('./chat/models/fasttext_model_tbk.bin')
+model_tnn = ""
+model_kmttntn = ""
 
 
 class Classification():
@@ -35,7 +37,23 @@ class Classification():
         print(f'Probability: {probabilities[0]}\n')
 
         return labels[0]
-    
+
+    def get_intent_name_TNN(self, query):
+        labels, probabilities = model_tnn.predict(query)
+
+        print(f'Predicted label: {labels[0]}')
+        print(f'Probability: {probabilities[0]}\n')
+
+        return labels[0]
+
+    def get_intent_name_KMTTNTN(self, query):
+        labels, probabilities = model_kmttntn.predict(query)
+
+        print(f'Predicted label: {labels[0]}')
+        print(f'Probability: {probabilities[0]}\n')
+
+        return labels[0]
+     
     def get_intent_name_DHCT(self, query):
         labels, probabilities = model_dhct.predict(query)
 
