@@ -6,8 +6,8 @@ model_dhct = fasttext.load_model('./chat/models/fasttext_model_dhct.bin')
 model_tcntttt = fasttext.load_model('./chat/models/fasttext_model_tcntttt.bin')
 model_tkt = fasttext.load_model('./chat/models/fasttext_model_tkt.bin')
 model_tbk = fasttext.load_model('./chat/models/fasttext_model_tbk.bin')
-model_tnn = ""
-model_kmttntn = ""
+model_tnn = fasttext.load_model('./chat/models/fasttext_model_tnn.bin')
+model_kmttntn = fasttext.load_model('./chat/models/fasttext_model_kmttntn.bin')
 
 
 class Classification():

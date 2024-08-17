@@ -31,8 +31,8 @@ data_file_dhct = './chat/data/dhct.xlsx'
 data_file_kt = './chat/data/kt.xlsx'
 data_file_bk = './chat/data/bk.xlsx'
 data_file_cntt = './chat/data/cntt.xlsx'
-data_file_nn = ''
-data_file_mttntn = ''
+data_file_nn = './chat/data/nn.xlsx'
+data_file_mttntn = './chat/data/mttntn.xlsx'
 
 df_dhct = pd.read_excel(data_file_dhct)
 df_bk = pd.read_excel(data_file_bk)

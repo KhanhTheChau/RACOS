@@ -3,6 +3,7 @@ from dotenv import load_dotenv
 import os
 from chat.classification import Classification
 import time
+from chat.serializers import QuerySerializer
 
 load_dotenv()
 MONGODB_URI = os.getenv('MONGODB_URI')
@@ -169,6 +170,15 @@ def get_query(request):
         print(f"\nThời gian Tổng hợp thông tin: {time.time() - start_time_info}\n")
 
         print("\nThời gian cuối: ", time.time()-start)
+        data = {
+            "question": query,
+            "intent": intent_name,
+            "information": combined_information
+        }
+        serializer = QuerySerializer(data=data)
+        if serializer.is_valid():
+            serializer.save()
+        else: print("Lưu không được")
         
         return Response({
                     "message": "successful",

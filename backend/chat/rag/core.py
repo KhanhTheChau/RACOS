@@ -72,7 +72,7 @@ class RAG:
         return results
 
     def enhance_prompt(self, query):
-        get_knowledge = self.vector_search(query, 5)
+        get_knowledge = self.vector_search(query, 3)
         if not get_knowledge:
             return "Không tìm thấy thông tin liên quan."
 
