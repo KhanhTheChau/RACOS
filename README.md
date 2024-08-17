@@ -26,5 +26,5 @@ Support Admissions · Artificial Intelligence · Chat-Voice · Speech Recognitio
 ![alt text](img/result3.jpg)
 ![alt text](img/result4.jpg)
 ![alt text](img/result5.jpg)
-![alt text](img/video1.mp4)
-![alt text](img/video2.mp4)
+![Watch the video](img/video1.mp4)
+![Watch the video](img/video2.mp4)
