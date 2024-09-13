@@ -26,23 +26,31 @@ Support Admissions · Artificial Intelligence · Chat-Voice · Speech Recognitio
 ## Overall Time Complexity:
 <details open>
 <summary>• For Qualitative Questions:</summary>
-    *The dominant operations are embedding generation (O(d)) and MongoDB retrieval (O(log n)), making the complexity for qualitative questions approximately O(d + log n + |L|), where |L| is the number of retrieved entities.
+    • The dominant operations are embedding generation (O(d)) and MongoDB retrieval (O(log n)), making the complexity for qualitative questions approximately O(d + log n + |L|), where |L| is the number of retrieved entities.
 </details>
 
-• For Quantitative Questions:
+
+<details open>
+<summary>• For Quantitative Questions:</summary>
     o The embedding generation takes O(d), retrieving vectors has complexity O(m), and FAISS indexing search takes O(log n), followed by a similarity check that takes O(k). Thus, the overall complexity is approximately O(d + m + log n + k).
+</details>
 
-Key Factors:
-    • d: Dimensionality of the embeddings (depends on the embedding models like GTE Large, PhoBERT).
-    • n: Number of indexed vectors/entities.
-    • m: Size of the dataset in terms of question-answer pairs.
-    • k: Number of nearest neighbors returned by FAISS for similarity comparison
 
-The complexity is mostly logarithmic in terms of data size for retrievals (via MongoDB or FAISS) and linear with respect to the embedding dimension. The final complexity can be seen as a combination of these components, reflecting a balance between indexing efficiency and embedding generation.
+<details open>
+<summary>Key Factors:</summary>
+    • d: Dimensionality of the embeddings (depends on the embedding models like GTE Large, PhoBERT).</br>
+    • n: Number of indexed vectors/entities.</br>
+    • m: Size of the dataset in terms of question-answer pairs.</br>
+    • k: Number of nearest neighbors returned by FAISS for similarity comparison</br>
+</details>
 
-The complexity of the algorithm depends on several key operations:
-    • For qualitative questions, the dominant operations are embedding generation (O(d), where d is the embedding dimension), MongoDB retrieval (O(log n), where n is the number of indexed entities), and iterating over the result set (O(|L|), with |L| being the size of the retrieved list).
-    • For quantitative questions, embedding generation (O(d)), dataset retrieval (O(m), where m is the dataset size), FAISS indexing search (O(log n)), and similarity checks (O(k), with k being the number of nearest neighbors) dominate.
+
+
+The complexity is mostly logarithmic in terms of data size for retrievals (via MongoDB or FAISS) and linear with respect to the embedding dimension. The final complexity can be seen as a combination of these components, reflecting a balance between indexing efficiency and embedding generation.</br>
+
+The complexity of the algorithm depends on several key operations:</br>
+    • For qualitative questions, the dominant operations are embedding generation (O(d), where d is the embedding dimension), MongoDB retrieval (O(log n), where n is the number of indexed entities), and iterating over the result set (O(|L|), with |L| being the size of the retrieved list).</br>
+    • For quantitative questions, embedding generation (O(d)), dataset retrieval (O(m), where m is the dataset size), FAISS indexing search (O(log n)), and similarity checks (O(k), with k being the number of nearest neighbors) dominate.</br>
 
 Overall, the algorithm’s complexity is O(d + log n + |L|) for qualitative and O(d + m + log n + k) for quantitative questions.
 
