@@ -1,9 +1,9 @@
+from chat.serializers import QuerySerializer
 from chat.rag.core import RAG
 from dotenv import load_dotenv 
 import os
 from chat.classification import Classification
 import time
-from chat.serializers import QuerySerializer
 
 load_dotenv()
 MONGODB_URI = os.getenv('MONGODB_URI')
@@ -58,7 +58,7 @@ rag_TCNTTTT = RAG(
 from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
-from chat.closest_sentence import search_sentence_cntt, search_sentence_bk, search_sentence_kt, search_sentence_dhct, search_sentence_nn, search_sentence_mttntn
+from chat.pdf import search_sentence_cntt, search_sentence_bk, search_sentence_kt, search_sentence_dhct, search_sentence_nn, search_sentence_mttntn
 layer = Classification()
 
 def template(query, source_information):
@@ -69,7 +69,7 @@ def template(query, source_information):
 
 def template_rieng(query, source_information):
     return f"Hãy trở thành chuyên gia tư vấn tuyển sinh cho trường Đại học Cần Thơ. \
-            Câu hỏi của người dùng: {query}\nTrả lời câu hỏi dựa vào các thông tin về ngành dưới đây: {source_information}."
+            Câu hỏi của người dùng: {query}\nTrả lời câu hỏi dựa vào các thông tin sau: {source_information}."
             
 @api_view(['POST'])
 def get_query(request):
@@ -165,18 +165,20 @@ def get_query(request):
         
         
         # if source_information == "":
-        #     source_information = rag_CHUNG.enhance_prompt(query)
-            
+        source_add_information = rag_CHUNG.enhance_prompt(query)
+        combined_information += ". Biết thêm thông tin sau " + source_add_information
         print(f"\nThời gian Tổng hợp thông tin: {time.time() - start_time_info}\n")
 
         print("\nThời gian cuối: ", time.time()-start)
+        
         data = {
             "question": query,
             "intent": intent_name,
             "information": combined_information
         }
         serializer = QuerySerializer(data=data)
-        if serializer.is_valid():
+        print(serializer)
+        if serializer.is_valid(raise_exception=True):
             serializer.save()
         else: print("Lưu không được")
         

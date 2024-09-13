@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "chat",
-    
+    "user",
     "rest_framework",
     "corsheaders",
 ]
