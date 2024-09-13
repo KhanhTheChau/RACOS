@@ -25,14 +25,14 @@ Support Admissions · Artificial Intelligence · Chat-Voice · Speech Recognitio
 
 ## Overall Time Complexity:
 <details open>
-<summary>• For Qualitative Questions:</summary>
+<summary> For Qualitative Questions:</summary>
     • The dominant operations are embedding generation (O(d)) and MongoDB retrieval (O(log n)), making the complexity for qualitative questions approximately O(d + log n + |L|), where |L| is the number of retrieved entities.
 </details>
 
 
 <details open>
-<summary>• For Quantitative Questions:</summary>
-    o The embedding generation takes O(d), retrieving vectors has complexity O(m), and FAISS indexing search takes O(log n), followed by a similarity check that takes O(k). Thus, the overall complexity is approximately O(d + m + log n + k).
+<summary> For Quantitative Questions:</summary>
+    • The embedding generation takes O(d), retrieving vectors has complexity O(m), and FAISS indexing search takes O(log n), followed by a similarity check that takes O(k). Thus, the overall complexity is approximately O(d + m + log n + k).
 </details>
 
 
